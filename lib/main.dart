@@ -17,11 +17,8 @@ class MyApp extends ConsumerWidget {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       title: 'Dosh App',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: ThemeData(primarySwatch: Colors.blue),
       routerConfig: ref.watch(appRouterProvider),
-
     );
   }
 }
