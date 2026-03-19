@@ -13,7 +13,6 @@ PlayerDao playerDao(Ref ref) {
 @DriftAccessor(tables: [Players])
 class PlayerDao extends DatabaseAccessor<AppDatabase> with _$PlayerDaoMixin {
   final AppDatabase db;
-
   PlayerDao(this.db) : super(db);
 
   Future<List<Player>> getAllPlayers() => select(players).get();

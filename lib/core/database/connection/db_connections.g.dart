@@ -49,4 +49,4 @@ final class AppDatabaseConnectionProvider
 }
 
 String _$appDatabaseConnectionHash() =>
-    r'9923dd454a69f95488f32cf24fa2d46391b02cdd';
+    r'b6e2b5fd620d8f97935d97d0ae887f51eab62548';
