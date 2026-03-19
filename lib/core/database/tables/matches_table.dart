@@ -7,7 +7,6 @@ class Matches extends Table {
   DateTimeColumn get date => dateTime().withDefault(Constant(DateTime.now()))();
   TextColumn get location => text().nullable()();
   BoolColumn get isFinished => boolean().withDefault(const Constant(false))();
-
   // Suggestion: Foreign key to Players.id
   IntColumn get winnerId => integer().nullable().references(Players, #id)();
 }
