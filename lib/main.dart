@@ -13,7 +13,8 @@ class MyApp extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    ref.watch(appDatabaseProvider); // Ensure the database is initialized
+  //  Ensure the database is initialized
+  ref.watch(appDatabaseProvider);
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       title: 'Dosh App',
