@@ -1,5 +1,6 @@
 import 'package:dosh_app/core/database/db.dart';
 import 'package:dosh_app/core/routers/router.dart';
+import 'package:dosh_app/utils/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends ConsumerWidget {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       title: 'Dosh App',
-      theme: ThemeData(primarySwatch: Colors.blue),
+      theme: ref.watch(themeProviderProvider),
       routerConfig: ref.watch(appRouterProvider),
     );
   }
