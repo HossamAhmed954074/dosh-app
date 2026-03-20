@@ -1,6 +1,5 @@
 // create a class called AppTheme that will hold the theme data for the app
 import 'package:flutter/material.dart';
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
 part 'app_theme.g.dart';

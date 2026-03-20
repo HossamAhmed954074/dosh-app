@@ -13,10 +13,9 @@ part 'router.g.dart';
 GoRouter appRouter(Ref ref) {
   ref.listen(appDatabaseProvider, (previous, next) {
     // When the database is initialized, refresh the router to ensure it can access the database
-    if (next != null) {
-      ref.refresh(appRouterProvider);
-    }
-  });
+    // ignore: unused_result
+    ref.refresh(appRouterProvider);
+    });
   return GoRouter(
     initialLocation: '/',
     routes: [

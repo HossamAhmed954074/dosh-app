@@ -1,5 +1,4 @@
 // i want to create a database for my app using drift package in flutter, i have 3 tables, players, matches and rounds, and a linking table between matches and players, i want to create the database file that will include all these tables and the necessary imports
-import 'dart:io';
 
 import 'package:dosh_app/core/database/connection/db_connections.dart';
 import 'package:dosh_app/core/database/tables/match_players_table.dart';
@@ -19,7 +18,7 @@ AppDatabase appDatabase(Ref ref) {
 
 @DriftDatabase(tables: [Players, Matches, Rounds, MatchParticipants])
 class AppDatabase extends _$AppDatabase {
-  AppDatabase(LazyDatabase lazyDb) : super(lazyDb);
+  AppDatabase(LazyDatabase super.lazyDb);
   @override
   int get schemaVersion => 1;
 
